@@ -1,0 +1,35 @@
+set tabstop=2 
+set shiftwidth=2
+set softtabstop=2 
+set noexpandtab
+set nowrap
+set scrolloff=8
+set smartcase
+set ignorecase
+set nu
+set relativenumber
+set nohlsearch
+set incsearch
+
+let mapleader=" "
+
+"KEYMAPS
+map gi :vsc Edit.GoToImplementation<CR>
+map gr :vsc Edit.FindAllReferences<CR>
+map gp :vsc Edit.PeekDefinition<CR>
+map K :vsc Edit.QuickInfo<CR>
+nnoremap R :vsc Refactor.Rename<CR>
+
+map <C-o> :vsc View.NavigateBackward<CR>
+map <C-i> :vsc View.NavigateForward<CR>
+
+map <C-t> :vsc DebuggerContextMenus.ScriptProject.OpenCommandLine.Default<CR>
+
+"Solution Explorer
+map <C-n> :vsc View.SolutionExplorer<CR>
+map <C-e> :vsc Window.AutoHide<CR>
+
+"Debug
+nnoremap <leader>b :vsc Debug.ToggleBreakpoint<CR>
+
+nnoremap <leader>rc :tabnew ~/.vsvimrc<CR>
