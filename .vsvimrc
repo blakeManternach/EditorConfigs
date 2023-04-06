@@ -32,4 +32,4 @@ map <C-e> :vsc Window.AutoHide<CR>
 "Debug
 nnoremap <leader>b :vsc Debug.ToggleBreakpoint<CR>
 
-nnoremap <leader>rc :tabnew ~/EditorConfigs/.vsvimrc<CR>
+nnoremap <leader>rc :tabnew ~/vimFiles/.vsvimrc<CR>
